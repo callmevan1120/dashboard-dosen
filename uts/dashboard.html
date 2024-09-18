@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://pmm.kampusmerdeka.kemdikbud.go.id/files/logopt/051024.png"
+    />
+    <title>Dashboard Dosen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="top-header">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="/aset/pth.png" alt="img" />
+          <div class="pts">
+            <b><h2>UNIVERSITAS AMIKOM YOGYAKARTA</h2></b>
+          </div>
+        </div>
+        <!-- LOGOUT -->
+        <div class="logout">
+          <a href="login.html" class="text-decoration-none" style="color: white"
+            >LOGOUT</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR KIRI -->
+        <div class="col-2 kiri">
+          <div class="profile d-flex flex-column align-items-center">
+            <img class="pp" src="/aset/pp.png" alt="" />
+            <p class="m-0"><b>Vany Eka Karunia</b></p>
+            <p class="m-0">23.01.4995</p>
+          </div>
+          <hr />
+          <div class="menu">
+            <a
+              href="dashboard.html"
+              class="text-decoration-none"
+              style="color: currentColor"
+            >
+              <div class="menu-item">
+                <i class="fas fa-tachometer-alt menu-icon"></i>Dashboard Dosen
+              </div>
+            </a>
+            <a
+              href="tambahdata.html"
+              class="text-decoration-none"
+              style="color: currentColor"
+            >
+              <div class="menu-item">
+                <i class="fas fa-plus menu-icon"></i>Tambah Data Mahasiswa
+              </div>
+            </a>
+            <a
+              href="rekapitulasi.html"
+              class="text-decoration-none"
+              style="color: currentColor"
+            >
+              <div class="menu-item">
+                <i class="fas fa-chart-bar menu-icon"></i>Rekap Data Mahasiswa
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- KONTEN KANAN -->
+        <div class="col-10 kanan">
+          <div class="header-kanan">
+            <div class="jdl m-0">
+              <b><h2 class="m-0 bg-white p-3">DASHBOARD DOSEN</h2></b>
+            </div>
+          </div>
+          <hr />
+          <!-- MENU KANAN -->
+          <div class="sem"><h4>Semester - Genap TA. 2023/2024</h4></div>
+          <div class="menud">
+            <div class="card cardqr">
+              <div class="qrc">QR DOSEN</div>
+              <hr />
+              <div class="d-flex justify-content-center">
+                <img class="imgqr" src="/aset/qr.png" alt="image" />
+              </div>
+            </div>
+            <div class="card cardaktif">
+              <div class="qrc">STATUS AKTIVASI</div>
+              <hr />
+              <div class="d-flex align-items-center justify-content-center">
+                <img class="imgck" src="/aset/ck.png" alt="image" />
+                <div class="tif">
+                  <b><h2>Aktif</h2></b>
+                </div>
+              </div>
+            </div>
+            <div class="card cardmatkul">
+              <div class="qrc">DAFTAR AJAR MATAKULIAH</div>
+              <hr />
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Matakuliah</th>
+                    <th>Kelas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="mtkl">Pemrograman Web</td>
+                    <td>23D3TI01</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="mtkl">Keamanan Data</td>
+                    <td>23D3TI03</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="mtkl">Struktur Data</td>
+                    <td>23S1SI05</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="mtkulcard">
+            <div class="jadwalpengajaran">
+              <p><b>JADWAL PENGAJARAN</b></p>
+            </div>
+            <div class="card cardjadwal">
+              <div class="jadwal">
+                <i class="bi bi-calendar-check-fill iconnih"></i>
+                <div class="jadwalajar">
+                  <p><b>Selasa</b></p>
+                  <p>Pemrograman Web</p>
+                </div>
+                <div class="jamajar">
+                  <p>08.50-10.30</p>
+                  <p>07.04.01</p>
+                </div>
+              </div>
+              <hr />
+              <div class="jadwal">
+                <i class="bi bi-calendar-check-fill iconnih"></i>
+                <div class="jadwalajar">
+                  <p><b>Selasa</b></p>
+                  <p>Keamanan Data</p>
+                </div>
+                <div class="jamajar">
+                  <p>10.40-12.20</p>
+                  <p>07.04.02</p>
+                </div>
+              </div>
+              <hr />
+              <div class="jadwal">
+                <i class="bi bi-calendar-check-fill iconnih"></i>
+                <div class="jadwalajar">
+                  <p><b>Rabu</b></p>
+                  <p>Struktur Data</p>
+                </div>
+                <div class="jamajar">
+                  <p>10.40-12.20</p>
+                  <p>05.04.03</p>
+                </div>
+              </div>
+              <hr />
+              <div class="jadwal">
+                <i class="bi bi-calendar-check-fill iconnih"></i>
+                <div class="jadwalajar">
+                  <p><b>Rabu</b></p>
+                  <p>Pemrograman Web</p>
+                </div>
+                <div class="jamajar">
+                  <p>13.20-15.00</p>
+                  <p>07.02.01</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
